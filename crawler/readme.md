@@ -38,12 +38,12 @@ Apart from the class "crawler", I have a function to check the robots.txt files 
 Lastly, in order to utilize multi-threading to speed up crawling, I have class MyThread inherited from threading.Thread. It will be called by the main function and enable us to crawl with multiple threads. 
 
 
-##3 Bugs or Non-working Features
+## 3 Bugs or Non-working Features
 
 + The input part of the main function is not carefully designed. So please input as guided. 
 + There are potential exceptions not handled when checking robots.txt file or get html file using requests.get. So some of the threads may die during the crawling (very rare). 
 + There are potential format errors when logger trying to log complicated languages (such as Sanskrit). 
 
-##4 Special features
+## 4 Special features
 
 My crawler can keep crawling for a long time. Actually, I wonder if the crawler will only stop working after it takes up all my RAM space. 
