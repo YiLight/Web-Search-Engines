@@ -43,24 +43,24 @@ int main() {
         cout << endl << "Building finished! ";
     }
     else if (running_mode == "q") {
-//        string lexicon_path, doc_path, list_path, trec_path;
-//
-//        cout << endl << "Please input path to your lexicon map file: ";
-//        getline(cin, lexicon_path);
-//
-//        cout << endl << "Please input path to your doc map file: ";
-//        getline(cin, doc_path);
-//
-//        cout << endl << "Please input path to your inverted index file: ";
-//        getline(cin, list_path);
-//
-//        cout << endl << "Please input path to your trec file: ";
-//        getline(cin, trec_path);
+       string lexicon_path, doc_path, list_path, trec_path;
 
-        string lexicon_path = R"(D:\msmarco_dataset\test\lexicon_map.txt)";
-        string doc_path = R"(D:\msmarco_dataset\test\doc_map.txt)";
-        string list_path = R"(D:\msmarco_dataset\test\inverted_list.txt)";
-        string trec_path = R"(D:\msmarco_dataset\msmarco-docs.trec)";
+       cout << endl << "Please input path to your lexicon map file: ";
+       getline(cin, lexicon_path);
+
+       cout << endl << "Please input path to your doc map file: ";
+       getline(cin, doc_path);
+
+       cout << endl << "Please input path to your inverted index file: ";
+       getline(cin, list_path);
+
+       cout << endl << "Please input path to your trec file: ";
+       getline(cin, trec_path);
+
+//         string lexicon_path = R"(D:\msmarco_dataset\test\lexicon_map.txt)";
+//         string doc_path = R"(D:\msmarco_dataset\test\doc_map.txt)";
+//         string list_path = R"(D:\msmarco_dataset\test\inverted_list.txt)";
+//         string trec_path = R"(D:\msmarco_dataset\msmarco-docs.trec)";
 
         phmap::flat_hash_map<string, lexicon_item> lexicon_map;
         vector<doc_item> doc_map;
